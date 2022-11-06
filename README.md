@@ -1,10 +1,23 @@
 # algoritmic_complexcity
 przedstawienie złożoności obliczeniowej
 ```py
+def calculate_tim_fibo1(n):
+    start = timer()
+    fibo1(n)
+    end = timer()
+    return end-start
+    
+def calculate_tim_fibo2(n):
+    start = timer()
+    fibo2(n)
+    end = timer()
+    return end-start
+
+tim_fibo1 = [calculate_tim_fibo1(x) for x in range(1,30)]
+tim_fibo2 = [calculate_tim_fibo2(x) for x in range(1,30)]
+
 import matplotlib.pyplot as plt
 import numpy as np
-
-
 
 xpoints = [x for x in range(1,30)]
 
