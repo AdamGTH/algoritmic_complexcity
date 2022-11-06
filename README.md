@@ -1,6 +1,33 @@
 # algoritmic_complexcity
 przedstawienie złożoności obliczeniowej
 ```py
+def fibo1(n):
+    if n < 0:
+        return False
+    elif n == 0:
+        return 1
+    elif n > 0:
+        return fibo1(n-1) + fibo1(n-2)
+    else:
+        return False
+
+def fibo2(n):
+    a = 1
+    b = 1
+    i = 0
+    fib_list = []
+    while(i < (n//2)):
+        i = i + 1
+        fib_list.append(a)
+        fib_list.append(b)
+        a = a+b
+        b = a+b
+    #print(fib_list)    
+    return fib_list
+
+
+from timeit import default_timer as timer
+
 def calculate_tim_fibo1(n):
     start = timer()
     fibo1(n)
