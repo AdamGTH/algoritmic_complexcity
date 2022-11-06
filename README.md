@@ -40,10 +40,11 @@ def calculate_tim_fibo2(n):
     end = timer()
     return end-start
 
-item = 30
-tim_fibo_bad = [calculate_tim_fibo1(x) for x in range(1,item)]
-tim_fibo_good = [calculate_tim_fibo2(x) for x in range(1,item)]
-xpoints = [x for x in range(1,item)]
+points = 30
+tim_fibo_bad = [calculate_tim_fibo1(x) for x in range(1,points)]
+tim_fibo_good = [calculate_tim_fibo2(x) for x in range(1,points)]
+xpoints = [x for x in range(1,points)]
+
 
 import matplotlib.pyplot as plt
 import numpy as np
