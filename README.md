@@ -51,7 +51,10 @@ import numpy as np
 
 plt.plot(xpoints, tim_fibo_bad)
 plt.plot(xpoints, tim_fibo_good)
+
+plt.ylabel("Execution time")
+plt.xlabel("Number of items")
 plt.show()
 ```
-![image](https://user-images.githubusercontent.com/111123372/200168196-8516426e-70da-4a5d-b18a-019211df167f.png)
+![image](https://user-images.githubusercontent.com/111123372/200170133-47831ce0-2666-493c-9226-8b722186b607.png)
 
