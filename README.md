@@ -1,5 +1,5 @@
 # algoritmic_complexcity
-przedstawienie złożoności obliczeniowej
+Przedstawienie złożoności obliczeniowej
 ```py
 def fibo1(n):
     if n < 0:
