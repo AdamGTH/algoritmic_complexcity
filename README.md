@@ -40,7 +40,7 @@ def calculate_tim_fibo2(n):
     end = timer()
     return end-start
 
-item = 25
+item = 30
 tim_fibo_bad = [calculate_tim_fibo1(x) for x in range(1,item)]
 tim_fibo_good = [calculate_tim_fibo2(x) for x in range(1,item)]
 xpoints = [x for x in range(1,item)]
@@ -52,5 +52,5 @@ plt.plot(xpoints, tim_fibo_bad)
 plt.plot(xpoints, tim_fibo_good)
 plt.show()
 ```
-![image](https://user-images.githubusercontent.com/111123372/200167805-a05ff1c0-cffb-40bb-86f4-12ef61253744.png)
+![image](https://user-images.githubusercontent.com/111123372/200168196-8516426e-70da-4a5d-b18a-019211df167f.png)
 
