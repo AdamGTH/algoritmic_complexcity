@@ -3,7 +3,8 @@
 Poniżej przedstawienie sposobu działania dwóch funkcji fibo1() i fibo2(), które po otrzymaniu argumentu
 obliczają i zwracają wyrazy ciągu Fibonacciego w ilosci równej wartości przekazanego argumentu. 
 Funkcja fibo1() realizuje obliczenia za pomocą rekurencji, natomiast fibo2() w sposób iterracyjny.
-Została również przeprowadzona analiza wydajności czasowej obydwu funkcji w zależności od ilości wyrazów ciągu.
+
+Poniżej została przeprowadzona analiza wydajności czasowej obydwu funkcji w zależności od ilości wyrazów ciągu.
 Wyniki zobrazowane zostały na wykresie.
 
 ### Realizacja poprzez rekurencję 
@@ -76,12 +77,10 @@ plt.show()
 ```
 ![image](https://user-images.githubusercontent.com/111123372/200170133-47831ce0-2666-493c-9226-8b722186b607.png)
 
-Z przeprowadzonych pomiarów, można wywnioskować,
-że lepszym sposobem do obliczenia n-tego wyrazu ciągu,
-jest rozwiązanie z zastosowaniem iterracji.
-Na wykresie można zaobserwować, że dla funkcji fibo1() 
-wraz ze wzrostem ilości wyrazów ciągu 
-czas trwania obliczeń wzrasta wykładniczo.
+Z przeprowadzonych pomiarów, można wywnioskować,że lepszym sposobem do obliczenia n-tego wyrazu ciągu,
+jest rozwiązanie z zastosowaniem iterracji. Na wykresie można zaobserwować, że dla funkcji fibo1() 
+wraz ze wzrostem ilości wyrazów ciągu czas trwania obliczeń wzrasta wykładniczo i przy 30 wyrazie wynosi juz kila sekund,
+natomiast przy fibo2() czas realizacji jest wciąż bliski zeru.
 
 
 
