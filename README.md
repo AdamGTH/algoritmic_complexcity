@@ -75,7 +75,8 @@ plt.ylabel("Execution time")
 plt.xlabel("Number of items")
 plt.show()
 ```
-![image](https://user-images.githubusercontent.com/111123372/200170133-47831ce0-2666-493c-9226-8b722186b607.png)
+![image](https://user-images.githubusercontent.com/111123372/200371140-740f3eff-f715-4fe3-90ce-288407b7ba78.png)
+
 
 Z przeprowadzonych pomiarów, można wywnioskować,że lepszym sposobem do obliczenia n-tego wyrazu ciągu,
 jest rozwiązanie z zastosowaniem iterracji. Na wykresie można zaobserwować, że dla funkcji fibo1() 
