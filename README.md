@@ -7,7 +7,7 @@ Funkcja fibo1() realizuje obliczenia za pomocą rekurencji, natomiast fibo2() w 
 Poniżej została przeprowadzona analiza wydajności czasowej obydwu funkcji w zależności od ilości wyrazów ciągu.
 Wyniki zobrazowane zostały na wykresie.
 
-### Realizacja poprzez rekurencję 
+### Realizacja obliczeń przez rekurencję 
 ```py
 def fibo1(n):
     if n < 0:
@@ -21,7 +21,7 @@ def fibo1(n):
 ```
 
 
-### Realizacja przez iterację 
+### Realizacja obliczeń przez iterację 
 
 ```py
 def fibo2(n):
@@ -79,8 +79,9 @@ plt.show()
 
 Z przeprowadzonych pomiarów, można wywnioskować,że lepszym sposobem do obliczenia n-tego wyrazu ciągu,
 jest rozwiązanie z zastosowaniem iterracji. Na wykresie można zaobserwować, że dla funkcji fibo1() 
-wraz ze wzrostem ilości wyrazów ciągu czas trwania obliczeń wzrasta wykładniczo i przy 30 wyrazie wynosi juz kila sekund,
-natomiast przy fibo2() czas realizacji jest wciąż bliski zeru.
+wraz ze wzrostem ilości wyrazów ciągu czas trwania obliczeń wzrasta wykładniczo i przy 30 wyrazie wynosi juz blisko pół sekundy, 
+z przeprowadzonych wcześniej doświadczeń przy n=40, obliczenia w przypadku rekurencji trwały bardzo długo i prowadziły do zawieszenia komputera,
+natomiast przy rozwioązaniu iterracyjnym fibo2() czas realizacji jest wciąż bliski zeru, nawet przy znacznej liczbie wyrazów.
 
 
 
