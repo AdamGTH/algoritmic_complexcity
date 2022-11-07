@@ -1,7 +1,10 @@
 # algoritmic_complexcity
 
-Poniżej, przedstawienie sposobu działania dwóch funkcji fibo1() i fibo2(),
-które obliczają n-ty wyraz ciągu Fibonacciego na dwa sposoby,
+Poniżej przedstawienie sposobu działania dwóch funkcji fibo1() i fibo2(), które po otrzymaniu argumentu
+obliczają i zwracają wyrazy ciągu Fibonacciego w ilosci równej wartości przekazanego argumentu. 
+Funkcja fibo1() realizuje obliczenia za pomocą rekurencji, natomiast fibo2() w sposób iterracyjny.
+Została również przeprowadzona analiza wydajności czasowej obydwu funkcji w zależności od ilości wyrazów ciągu.
+Wyniki zobrazowane zostały na wykresie.
 
 ### Realizacja poprzez rekurencję 
 ```py
@@ -25,13 +28,14 @@ def fibo2(n):
     b = 1
     i = 0
     fib_list = []
+
     while(i < (n//2)):
         i = i + 1
         fib_list.append(a)
         fib_list.append(b)
         a = a+b
         b = a+b
-    #print(fib_list)    
+       
     return fib_list
 ```
 
