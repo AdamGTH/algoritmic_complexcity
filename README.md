@@ -1,7 +1,7 @@
 # algoritmic_complexcity
 
-## Przedstawienie złożoności obliczeniowej
-
+Poniżej, przedstawienie sposobu działania dwóch funkcji fibo1() i fibo2(),
+które obliczają n-ty wyraz ciągu Fibonacciego na dwa sposoby,
 
 ### Realizacja poprzez rekurencję 
 ```py
@@ -16,8 +16,10 @@ def fibo1(n):
         return False
 ```
 
-```py
 
+### Realizacja przez iterację 
+
+```py
 def fibo2(n):
     a = 1
     b = 1
@@ -31,8 +33,11 @@ def fibo2(n):
         b = a+b
     #print(fib_list)    
     return fib_list
+```
 
 
+### Funkcje do pomiaru czasu realizacji obliczeń, dla dwóch sposobów  
+```py
 from timeit import default_timer as timer
 
 def calculate_tim_fibo1(n):
@@ -46,12 +51,14 @@ def calculate_tim_fibo2(n):
     fibo2(n)
     end = timer()
     return end-start
+```
 
+### Przedstawienie wyników badań wydajności w postaci wykresu czasowego.
+```py
 points = 30
 tim_fibo_bad = [calculate_tim_fibo1(x) for x in range(1,points)]
 tim_fibo_good = [calculate_tim_fibo2(x) for x in range(1,points)]
 xpoints = [x for x in range(1,points)]
-
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -64,4 +71,12 @@ plt.xlabel("Number of items")
 plt.show()
 ```
 ![image](https://user-images.githubusercontent.com/111123372/200170133-47831ce0-2666-493c-9226-8b722186b607.png)
+
+Z przeprowadzonych pomiarów, można wywnioskować,
+że lepszym sposobem do obliczenia n-tego wyrazu ciągu,
+jest rozwiązanie z zastosowaniem iterracji.
+Przedstawione to zostało na wykresie i widać.....
+
+
+
 
