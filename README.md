@@ -1,6 +1,7 @@
 # algoritmic_complexcity
 Przedstawienie złożoności obliczeniowej
 ```py
+## Realizacja rekurencyjna
 def fibo1(n):
     if n < 0:
         return False
