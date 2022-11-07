@@ -1,7 +1,9 @@
 # algoritmic_complexcity
 Przedstawienie złożoności obliczeniowej
+
+
+## Realizacja poprzez rekurencję 
 ```py
-## Realizacja rekurencyjna
 def fibo1(n):
     if n < 0:
         return False
@@ -11,6 +13,9 @@ def fibo1(n):
         return fibo1(n-1) + fibo1(n-2)
     else:
         return False
+```
+
+```py
 
 def fibo2(n):
     a = 1
