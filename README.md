@@ -40,7 +40,7 @@ def fibo2(n):
 ```
 
 
-### Funkcje do pomiaru czasu realizacji obliczeń, dla dwóch sposobów  
+### Funkcje do pomiaru czasu obliczeń. 
 ```py
 from timeit import default_timer as timer
 
@@ -57,7 +57,7 @@ def calculate_tim_fibo2(n):
     return end-start
 ```
 
-### Przedstawienie wyników badań wydajności w postaci wykresu czasowego.
+### Przedstawienie wyników badań wydajności na wykresie dla 30 wyrazów ciągu (points=30).
 ```py
 points = 30
 tim_fibo_bad = [calculate_tim_fibo1(x) for x in range(1,points)]
@@ -79,7 +79,9 @@ plt.show()
 Z przeprowadzonych pomiarów, można wywnioskować,
 że lepszym sposobem do obliczenia n-tego wyrazu ciągu,
 jest rozwiązanie z zastosowaniem iterracji.
-Przedstawione to zostało na wykresie i widać.....
+Na wykresie można zaobserwować, że dla funkcji fibo1() 
+wraz ze wzrostem ilości wyrazów ciągu 
+czas trwania obliczeń wzrasta wykładniczo.
 
 
 
